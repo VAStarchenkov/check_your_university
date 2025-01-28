@@ -32,13 +32,11 @@ table.ExcelTable td {
   white-space: nowrap; /* перенос слов только целиком */
   overflow: hidden; /* скрываем текст, если он выходит за пределы */
   max-height: 100px; /* максимальная высота ячейки */
-  max-width: 100px; /* максимальная ширина ячейки */
 }
 
 /* стили для области ввода */
 table.ExcelTable textarea {
   width: auto;
-  max-width: 100px; /* ограничение ширины ввода */
   height: auto;
   max-height: 100px; /* ограничение высоты ввода */
   border: none; /* убираем рамку поля ввода */
