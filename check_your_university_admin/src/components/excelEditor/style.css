@@ -1,0 +1,54 @@
+/* стили для самой таблицы */
+.ExcelTableWrapper {
+  width: auto;
+  max-width: 90%; /* ширина относительно внешнего контейнера */
+  margin: 20px auto; /* расстояние над таблицей */
+  padding: 10px; /* отступы между ячейками и фигурой таблицы */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.8); /* тень */
+  border-radius: 5px; /* скругление */
+  overflow-x: auto; /* прокрутка по горизонтали */
+  overflow-y: auto; /* прокрутка по вертикали */
+  background-color: #e5f2ff; /* цвет обводки таблицы */
+  max-height: 700px; /* ограничение высоты контейнера */
+  max-width: 1400px; /* ограничение ширины контейнера */
+}
+
+/* стили для ячеек */
+table.ExcelTable {
+  width: 60%; /* размер ячейки */
+  border-collapse: collapse; /* отсутствие двойных границ между ячейками */
+  font-size: 15px; /* размер текста в ячейках */
+  background-color: var(--white); /* цвет ячеек */
+  overflow: hidden; /* скрытие содержимого за границами */
+}
+
+/* стили для ячейки */
+table.ExcelTable th,
+table.ExcelTable td {
+  padding: 8px 10px; /* отступы внутри ячейки */
+  border: 1px solid #e5e7eb; /* цвет границ между ячейками */
+  text-align: left; /* по умолчанию область для текста слева */
+  word-break: break-word; /* перенос слов при переполнении */
+  white-space: nowrap; /* перенос слов только целиком */
+  overflow: hidden; /* скрываем текст, если он выходит за пределы */
+  max-height: 100px; /* максимальная высота ячейки */
+  max-width: 100px; /* максимальная ширина ячейки */
+}
+
+/* стили для области ввода */
+table.ExcelTable textarea {
+  width: auto;
+  max-width: 100px; /* ограничение ширины ввода */
+  height: auto;
+  max-height: 100px; /* ограничение высоты ввода */
+  border: none; /* убираем рамку поля ввода */
+  background: transparent; /* прозрачный фон */
+  overflow-wrap: break-word; /* перенос слов внутри текстового поля */
+  white-space: pre-wrap; /* сохранение переносов строк */
+  font-size: 15px; /* размер шрифта ввода */
+  padding: 4px; /* отступы в поле ввода */
+}
+
+table.ExcelTable tr:hover {
+  background-color: #f3f4f6; /* подсветка строки при наведении */
+}
